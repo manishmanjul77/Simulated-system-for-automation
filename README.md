@@ -18,6 +18,11 @@ ex. pip install numpy
 ## Requirements
 Numpy<br/>Pandas<br/>Keras(2.2)<br/>OpenCV<br/>Pillow<br/>Tensorflow(2.0)<br/>Sklearn
 
+## Screenhots
+![Screenshot (160)](https://user-images.githubusercontent.com/73165500/96705611-2671d480-13b3-11eb-988d-b71980304035.png)
+![Screenshot (161)](https://user-images.githubusercontent.com/73165500/96705614-270a6b00-13b3-11eb-89ad-ec66a1ea0805.png)
+![Screenshot (162)](https://user-images.githubusercontent.com/73165500/96705620-283b9800-13b3-11eb-8063-e012219d124d.png)
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
