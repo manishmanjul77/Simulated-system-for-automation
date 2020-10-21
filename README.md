@@ -8,7 +8,7 @@ A team project by Manish Manjul, Aagam Jain and Vineet Goyal.<br/>A web simulate
 
 
 ## Installation
-Basic pip commands for installing libraries. Python 3.8 and above is suggested.
+Basic pip commands for installing libraries. Python 3.8 and above is recommended.
 
 ## Requirements
 Numpy<br/>Pandas<br/>Keras(2.2)<br/>OpenCV<br/>Pillow<br/>Tensorflow(2.0)<br/>Sklearn
