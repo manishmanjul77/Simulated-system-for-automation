@@ -8,12 +8,7 @@ A team project by Manish Manjul, Aagam Jain and Vineet Goyal.<br/>A web simulate
 
 
 ## Installation
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install libraries.
-
-```bash
-ex. pip install numpy
-```
+Basic pip commands for installing libraries. Python 3.8 and above is suggested.
 
 ## Requirements
 Numpy<br/>Pandas<br/>Keras(2.2)<br/>OpenCV<br/>Pillow<br/>Tensorflow(2.0)<br/>Sklearn
