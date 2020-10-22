@@ -1,0 +1,545 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Minor Project</title>
+    <meta name="keywords" content="<?php echo $keywords; ?>">
+    <meta name="description" content="<?php echo $desc; ?>">
+<!--    <link rel="icon" type="image/x-icon" href=" {% static 'assets/img/favicon.png' %} "/>-->
+    <link href=" {% static 'assets/css/loader.css' %} " rel="stylesheet" type="text/css" />
+    <script src=" {% static 'assets/js/loader.js' %} "></script>
+    <link rel="apple-touch-icon" sizes="144x144" href=" {% static 'favicon/apple-touch-icon.png' %} ">
+    <link rel="icon" type="image/png" sizes="32x32" href=" {% static 'favicon/favicon-32x32.png' %} ">
+    <link rel="icon" type="image/png" sizes="16x16" href=" {% static 'favicon/favicon-16x16.png' %} ">
+    <link rel="manifest" href=" {% static 'favicon/site.webmanifest' %} ">
+    <link rel="mask-icon" href=" {% static 'favicon/safari-pinned-tab.svg' %} " color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href=" {% static 'bootstrap/css/bootstrap.min.css' %} " rel="stylesheet" type="text/css" />
+    <link href=" {% static 'assets/css/plugins.css' %} " rel="stylesheet" type="text/css" />
+</head>
+<link rel="stylesheet" type="text/css" href=" {% static 'assets/css/dashboard.css' %} ">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+console.log({{d}})
+    <div id="load_screen"> <div class="loader"> <div class="loader-content">
+        <div class="spinner-grow align-self-center"></div>
+    </div></div></div>
+
+    <div class="header-container fixed-top">
+        <header class="header navbar navbar-expand-sm">
+            <ul class="navbar-item theme-brand">
+                <li class="nav-item align-self-center">
+                    <a href=" {% static 'index.php' %} "><img src=" {% static 'assets/img/logo.png' %} " style="max-height:40px;" alt="Minor_proj"></a>
+                </li>
+            </ul>
+            
+            <div class="ml-md-auto fullscreen_navbar">
+                <ul class="navbar-item flex-row ml-md-auto">
+                    <li class="nav-item align-self-center" style="padding:10px;">
+                        <a href=" {% static '' %} " style="color:#ff5722; background:transparent; margin-top:8px; margin-right:25px; font-weight:700;" >File</a>
+                    </li>
+                    <li class="nav-item align-self-center" style="padding:10px;">
+                        <a href=" {% static '' %} " style="color:#000000; background:transparent; margin-top:8px; margin-right:25px; font-weight:700;" >Edit</a>
+                    </li>
+                    <li class="nav-item align-self-center" style="padding:10px;">
+                        <a href=" {% static '' %} " style="color:#000000; background:transparent; margin-top:8px; margin-right:25px; font-weight:700;" >Window</a>
+                    </li>
+                    <li class="nav-item align-self-center" style="padding:10px;">
+                        <a href=" {% static '' %} " style="color:#000000; background:transparent; margin-top:8px; margin-right:25px; font-weight:700;" >Help</a>
+                    </li>
+                    <li class="nav-item align-self-center" style="padding:10px;">
+                        <a href=" {% static '' %} " style="color:#000000; background:transparent; margin-top:8px; font-weight:700;" >Settings</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="navbar-item flex-row ml-md-auto">
+                <li class="nav-item align-self-center" style="padding:10px;">
+                    <a style="color:#000000; background:transparent; margin-top:8px; margin-right:15px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                </li>
+            </ul>
+        </header>
+    </div>
+    
+<!--    Sidebar start here-->
+    
+    <div class="sidebar-wrapper sidebar-theme">          
+        <nav id="sidebar">
+            <ul class="list-unstyled menu-categories" id="accordionExample" style="background-color:#2d323e;">
+                <li class="menu" style="margin-top:30px;">
+                    <img class="drag_img1" src=" {% static 'images/EV3-brick.png' %} ">
+                </li>
+                <li class="menu">
+                    <img class="drag_img2" src=" {% static 'images/EV3-Ultrasonic-Sensor.png' %} ">
+                </li>
+                <li class="menu">
+                    <img class="drag_img3" src=" {% static 'images/EV3-Colour-Sensor.png' %} ">
+                </li>
+
+                <li class="menu">
+                    <img class="drag_img4" src=" {% static 'images/EV3-Touch-Sensor.png' %} ">
+                </li>
+
+                <li class="menu">
+                    <img class="drag_img5" src=" {% static 'images/EV3-Infrared-Sensor-300x181.png' %} ">
+                </li>
+
+                <li class="menu">
+                    <img class="drag_img6" src=" {% static 'images/Pixy-2-camera.png' %} ">
+                </li>
+
+                <li class="menu">
+                    <img class="drag_img7" src=" {% static 'images/EV3-Gyro-Sensor.png' %} ">
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+<!--    sidebar end here-->
+
+<!--    Ye right sidebar hai-->
+
+    <div class="sidebar-wrapper sidebar-theme" style="right:0px;background-color:#95a3be;">
+        <nav id="sidebar">
+        	<ul class="list-unstyled menu-categories" id="default_sidebar" style="background-color:#95a3be;">
+        	</ul>
+            <ul class="list-unstyled menu-categories" id="brick_wala_div" style="background-color:#95a3be;">
+                <li class="menu" style="margin-top:30px;">
+                    <p class="text_info"><strong>Name:</strong> EV3 Brick<br><br><strong>Display:</strong> 178×128 pixel<br>Monochrome LCD<br><br><strong>Main Processor:</strong> TI Sitara<br>AM1808(ARM926EJ-S<br>core) @300 MHz<br><br><strong>Main Memory:</strong> 64 MB<br>RAM, 16 MB Flash<br>microSDHC Slot<br><br><strong>USB Host Port:</strong> Yes<br><br><strong>WiFi:</strong> Optional dongle<br>via USB port<br><br><strong>Bluetooth:</strong> Yes</p>
+                </li>
+                <li class="menu" style="margin-top:15px;text-align:center;">
+                    <input type="text" class="input_field" placeholder="Input" spellcheck="false">
+                </li>
+                <li class="menu" style="margin-top:20px;text-align:center;">
+                    <textarea type="text" class="output_field" placeholder="Output" spellcheck="false"></textarea>
+                </li>
+                <li class="menu" style="margin-top:2px;text-align:center;">
+                    <p style="color:#000;font-size:18px:">Made with <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="red" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> and <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#f0c986" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-coffee"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg></p>
+                </li>
+            </ul>
+            <ul class="list-unstyled menu-categories" id="uv_wala_div" style="background-color:#95a3be;">
+                <li class="menu" style="margin-top:30px;">
+                    <p class="text_info"><strong>Name:</strong> UV Sensor<br><br><strong>Display:</strong> 178×128 pixel<br>Monochrome LCD<br><br><strong>Main Processor:</strong> TI Sitara<br>AM1808(ARM926EJ-S<br>core) @300 MHz<br><br><strong>Main Memory:</strong> 64 MB<br>RAM, 16 MB Flash<br>microSDHC Slot<br><br><strong>USB Host Port:</strong> Yes<br><br><strong>WiFi:</strong> Optional dongle<br>via USB port<br><br><strong>Bluetooth:</strong> Yes</p>
+                </li>
+                <li class="menu" style="margin-top:15px;text-align:center;">
+                    <input type="text" class="input_field" placeholder="Input" spellcheck="false">
+                </li>
+                <li class="menu" style="margin-top:20px;text-align:center;">
+                    <textarea type="text" class="output_field" placeholder="Output" spellcheck="false"></textarea>
+                </li>
+                <li class="menu" style="margin-top:2px;text-align:center;">
+                    <p style="color:#000;font-size:18px:">Made with <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="red" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> and <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#f0c986" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-coffee"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg></p>
+                </li>
+            </ul>
+            <ul class="list-unstyled menu-categories" id="color_wala_div" style="background-color:#95a3be;">
+                <li class="menu" style="margin-top:30px;">
+                    <p class="text_info"><strong>Name:</strong> Color Sensor<br><br><strong>Display:</strong> 178×128 pixel<br>Monochrome LCD<br><br><strong>Main Processor:</strong> TI Sitara<br>AM1808(ARM926EJ-S<br>core) @300 MHz<br><br><strong>Main Memory:</strong> 64 MB<br>RAM, 16 MB Flash<br>microSDHC Slot<br><br><strong>USB Host Port:</strong> Yes<br><br><strong>WiFi:</strong> Optional dongle<br>via USB port<br><br><strong>Bluetooth:</strong> Yes</p>
+                </li>
+                <li class="menu" style="margin-top:15px;text-align:center;">
+                    <input type="text" class="input_field" placeholder="Input" spellcheck="false">
+                </li>
+                <li class="menu" style="margin-top:20px;text-align:center;">
+                    <textarea type="text" class="output_field" placeholder="Output" spellcheck="false"></textarea>
+                </li>
+                <li class="menu" style="margin-top:2px;text-align:center;">
+                    <p style="color:#000;font-size:18px:">Made with <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="red" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> and <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#f0c986" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-coffee"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg></p>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-container" id="container">
+        <div class="overlay"></div>
+        <div class="search-overlay"></div>
+        <hr id="line" style="display:none;position:absolute; top:50px; left:-100px; width:500px; margin:0; -webkit-transform:rotateZ(53.1deg); border-width:1px; border-style:solid; border-image:linear-gradient(to right, #f1f2f3 0%,#f1f2f3 49%,#000000 50%,#000000 100%) 1;">
+        <div id="p1" style="display:none; border-radius:5px; width:10px; background:#000; position:absolute; height:10px; top:45px; left:145px;"></div>
+        <div id="p2" style="display:none; border-radius:5px; width:10px; background:#000; position:absolute; height:10px; top:245px; left:295px;"></div>
+<!--    Right sidebar end here-->
+
+        <div id="content" class="main-content" style="margin-bottom: 80px;">
+            <div class="grid-container">
+                <div class="brick_grid" id="dragger_1">
+                    <img class="drag_img_1" id="dragger_1_img" src=" {% static 'images/brick_icon.png' %} ">
+
+
+                    <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+             {{ form.as_p }}
+            <button type="submit">Upload</button>
+                </form>
+
+          <!--<img src="{{ img_obj.image.url}}" alt="connect" style="max-height:300px">-->
+
+                </div>
+                <div class="ultrasoic_grid" id="dragger_2">
+                    <img class="drag_img_1" id="dragger_2_img" src=" {% static 'images/ultrasonic_icon.png' %} ">
+                </div>
+                <div class="color_grid" id="dragger_3">
+                    <img class="drag_img_1" id="dragger_3_img" src=" {% static 'images/color_icon.png' %} ">
+                </div>
+                <div class="pixy_grid" id="dragger_4">
+                    <img class="drag_img_1" id="dragger_4_img" src=" {% static 'images/touch_icon.png' %} ">
+                </div>
+                <div class="ir_grid" id="dragger_5">
+                    <img class="drag_img_1" id="dragger_5_img" src=" {% static 'images/ir_icon.png' %} ">
+                </div>
+                <div class="touch_grid" id="dragger_6">
+                    <img class="drag_img_1" id="dragger_6_img" src=" {% static 'images/pixy_icon.png' %} ">
+                </div>
+                <div class="gyro_grid" id="dragger_7">
+                    <img class="drag_img_1" id="dragger_7_img" src=" {% static 'images/gyro_icon.png' %} ">
+                </div>
+                <div class="vacant_1_grid">
+
+                </div>
+                <div class="vacant_2_grid">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+
+<script>
+
+$("#brick_wala_div").hide();
+$("#uv_wala_div").hide();
+$("#color_wala_div").hide();
+
+(function($){
+    $.fn.spawn_lines = function(options){
+        this.each(function(e){
+            var elem = $(this);
+            elem.on('click', function(e){
+                $("#line").show();
+                $("#p1").show();
+                $("#p2").show();
+
+            });
+        });
+        return this;
+    }
+}(jQuery));
+$('#container').spawn_lines();
+
+(function($){
+    $.fn.unspawn_lines = function(options){
+        this.each(function(e){
+            var elem = $(this);
+            elem.on('dblclick', function(e){
+                $("#line").hide();
+                $("#p1").hide();
+                $("#p2").hide();
+            });
+        });
+        return this;
+    }
+}(jQuery));
+$('#container').unspawn_lines();
+
+function pow2(n) {
+    return n * n;
+}
+
+var p1 = {
+    id: "p1",
+    x: 150,
+    y: 50
+};
+
+var p2 = {
+    id: "p2",
+    x: 300,
+    y: 250
+};
+var select = null;
+
+function getAngle() {
+    var dist = Math.sqrt(pow2(p1.x - p2.x) + pow2(p1.y - p2.y));
+    var l = document.getElementById("line");
+    var cos = (p2.x - p1.x) / Math.sqrt(pow2(p2.x - p1.x) + pow2(p2.y - p1.y));
+    var behind = p1.x < p2.x;
+    var higher = p1.y > p2.y;
+    l.style.width = (dist * 2) + "px";
+    l.style.left = (p1.x - dist) + "px";
+    l.style.top = (p1.y) + "px";
+    l.style.transform = "rotateZ(" + (higher ? -1 : 1) * Math.acos(cos) * (180 / Math.PI) + "deg)";
+}
+
+var down = false;
+
+document.addEventListener("mousemove", function (e) {
+    if(select) {
+        select.x = e.pageX;
+        select.y = e.pageY;
+        var p = document.getElementById(select.id);
+        p.style.left = (select.x - 5) + "px";
+        p.style.top = (select.y - 5) + "px";
+        getAngle();
+    }
+});
+
+document.addEventListener("mouseup", function (e) {
+    if (!select) select = p1;
+    else if (select == p1) select = p2;
+    else select = null;
+});
+
+document.addEventListener("mousedown", function (e) {
+    down = true;
+});
+
+dragElement(document.getElementById("dragger_1"));
+dragElement(document.getElementById("dragger_2"));
+dragElement(document.getElementById("dragger_3"));
+dragElement(document.getElementById("dragger_4"));
+dragElement(document.getElementById("dragger_5"));
+dragElement(document.getElementById("dragger_6"));
+dragElement(document.getElementById("dragger_7"));
+function dragElement(elmnt) {
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    if (document.getElementById(elmnt.id+"_img")) {
+        document.getElementById(elmnt.id+"_img").onmousedown = dragMouseDown;
+    } else {
+        elmnt.onmousedown = dragMouseDown;
+    }
+
+    function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        document.onmousemove = elementDrag;
+    }
+
+    function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    }
+
+    function closeDragElement() {
+        document.onmouseup = null;
+        document.onmousemove = null;
+    }
+}
+
+(function($){
+    $.fn.spawner1 = function(options){
+        this.each(function(e){
+            var elem = $(this);
+            elem.on('dblclick', function(e){
+                $("#dragger_1_img").show();
+                $("#brick_wala_div").show();
+                $("#default_sidebar").hide();
+            });
+        });
+        return this;
+    }
+}(jQuery));
+$('.drag_img1').spawner1();
+
+(function($){
+    $.fn.unspawner1 = function(options){
+        this.each(function(e){
+            var elem = $(this);
+            elem.on('dblclick', function(e){
+                $("#dragger_1_img").hide();
+                $("#brick_wala_div").hide();
+				$("#default_sidebar").show();
+            });
+        });
+        return this;
+    }
+}(jQuery));
+$('#dragger_1_img').unspawner1();
+
+(function($){
+    $.fn.spawner2 = function(options){
+        this.each(function(e){
+            var elem = $(this);
+            elem.on('dblclick', function(e){
+                $("#dragger_2_img").show();
+                 $("#uv_wala_div").show();
+                 $("#default_sidebar").hide();
+            });
+        });
+        return this;
+    }
+}(jQuery));
+$('.drag_img2').spawner2();
+
+(function($){
+    $.fn.unspawner2 = function(options){
+        this.each(function(e){
+            var elem = $(this);
+            elem.on('dblclick', function(e){
+                $("#dragger_2_img").hide();
+                $("#uv_wala_div").hide();
+                $("#default_sidebar").show();
+            });
+        });
+        return this;
+    }
+}(jQuery));
+$('#dragger_2_img').unspawner2();
+
+(function($){
+    $.fn.spawner3 = function(options){
+        this.each(function(e){
+            var elem = $(this);
+            elem.on('dblclick', function(e){
+                $("#dragger_3_img").show();
+                $("#default_sidebar").hide();
+            });
+        });
+        return this;
+    }
+}(jQuery));
+$('.drag_img3').spawner3();
+
+(function($){
+    $.fn.unspawner3 = function(options){
+        this.each(function(e){
+            var elem = $(this);
+            elem.on('dblclick', function(e){
+                $("#dragger_3_img").hide();
+            });
+        });
+        return this;
+    }
+}(jQuery));
+$('#dragger_3_img').unspawner3();
+
+(function($){
+    $.fn.spawner4 = function(options){
+        this.each(function(e){
+            var elem = $(this);
+            elem.on('dblclick', function(e){
+                $("#dragger_4_img").show();
+            });
+        });
+        return this;
+    }
+}(jQuery));
+$('.drag_img4').spawner4();
+
+(function($){
+    $.fn.unspawner4 = function(options){
+        this.each(function(e){
+            var elem = $(this);
+            elem.on('dblclick', function(e){
+                $("#dragger_4_img").hide();
+            });
+        });
+        return this;
+    }
+}(jQuery));
+$('#dragger_4_img').unspawner4();
+
+(function($){
+    $.fn.spawner5 = function(options){
+        this.each(function(e){
+            var elem = $(this);
+            elem.on('dblclick', function(e){
+                $("#dragger_5_img").show();
+            });
+        });
+        return this;
+    }
+}(jQuery));
+$('.drag_img5').spawner5();
+
+(function($){
+    $.fn.unspawner5 = function(options){
+        this.each(function(e){
+            var elem = $(this);
+            elem.on('dblclick', function(e){
+                $("#dragger_5_img").hide();
+            });
+        });
+        return this;
+    }
+}(jQuery));
+$('#dragger_5_img').unspawner5();
+
+(function($){
+    $.fn.spawner6 = function(options){
+        this.each(function(e){
+            var elem = $(this);
+            elem.on('dblclick', function(e){
+                $("#dragger_6_img").show();
+            });
+        });
+        return this;
+    }
+}(jQuery));
+$('.drag_img6').spawner6();
+
+(function($){
+    $.fn.unspawner6 = function(options){
+        this.each(function(e){
+            var elem = $(this);
+            elem.on('dblclick', function(e){
+                $("#dragger_6_img").hide();
+            });
+        });
+        return this;
+    }
+}(jQuery));
+$('#dragger_6_img').unspawner6();
+
+(function($){
+    $.fn.spawner7 = function(options){
+        this.each(function(e){
+            var elem = $(this);
+            elem.on('dblclick', function(e){
+                $("#dragger_7_img").show();
+            });
+        });
+        return this;
+    }
+}(jQuery));
+$('.drag_img7').spawner7();
+
+(function($){
+    $.fn.unspawner7 = function(options){
+        this.each(function(e){
+            var elem = $(this);
+            elem.on('dblclick', function(e){
+                $("#dragger_7_img").hide();
+            });
+        });
+        return this;
+    }
+}(jQuery));
+$('#dragger_7_img').unspawner7();
+
+</script>
+    
+<script src=" {% static 'bootstrap/js/popper.min.js' %} "></script>
+<script src=" {% static 'bootstrap/js/bootstrap.min.js' %} "></script>
+<script src=" {% static 'plugins/perfect-scrollbar/perfect-scrollbar.min.js' %} "></script>
+<script src=" {% static 'assets/js/app.js' %} "></script>
+<script>
+    $(document).ready(function() {
+        App.init();
+    });
+</script>
+<script src=" {% static 'assets/js/custom.js' %} "></script>
+</html>

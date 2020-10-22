@@ -1,0 +1,223 @@
+.drag_img_1 {
+    cursor: move;
+    z-index: 10;
+    max-width: 225px;
+    display: none;
+}
+
+.menu {
+    text-align:center;
+}
+
+.menu img {
+    max-width: 150px;
+    margin: 20px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.options_main_dash {
+    margin-top: -55px;
+    width: 100%;
+    height: 220px;
+}
+
+.grid-container_dash_cover {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    gap: 1px 1px;
+    grid-template-areas: "top_dash_cover top_dash_cover top_dash_cover" "middle_dash_cover middle_dash_cover middle_dash_cover" "bottom_dash_cover bottom_dash_cover bottom_dash_cover";
+}
+
+.top_dash_cover {
+    grid-area: top_dash_cover;
+}
+
+.middle_dash_cover {
+    grid-area: middle_dash_cover;
+}
+
+.bottom_dash_cover {
+    grid-area: bottom_dash_cover;
+}
+
+.header_h5 {
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 25px;
+    padding-left: 15px;
+}
+
+.middle_h6 {
+    text-align: left;
+    color: #000000;
+    font-weight: 900;
+    font-size: 35px;
+    padding-left: 15px;
+}
+
+.bottom_p {
+    color: #000000;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.total_course_background {
+    height: 220px;
+    background: url("../../images/total_courses.jpg") center center/cover no-repeat;
+}
+
+.completed_course_background {
+    height: 220px;
+    background: url("../../images/courses_total.jpg") center center/cover no-repeat;
+}
+
+.rating_background {
+    height: 220px;
+    background: url("../../images/rating_cpourses.jpg") center center/cover no-repeat;
+}
+
+.favorite_course_background {
+    height: 220px;
+    background: url("../../images/fav_courses.jpg") center center/cover no-repeat;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "brick_grid ultrasoic_grid color_grid" "pixy_grid ir_grid touch_grid" "gyro_grid vacant_1_grid vacant_2_grid";
+}
+
+.brick_grid {
+    grid-area: brick_grid;
+    position: absolute;
+    z-index: 9;
+}
+
+.ultrasoic_grid {
+    grid-area: ultrasoic_grid;
+    position: absolute;
+    z-index: 9;
+}
+
+.color_grid {
+    grid-area: color_grid;
+    position: absolute;
+    z-index: 9;
+}
+
+.pixy_grid {
+    grid-area: pixy_grid;
+    position: absolute;
+    z-index: 9;
+}
+
+.ir_grid {
+    grid-area: ir_grid;
+    position: absolute;
+    z-index: 9;
+}
+
+.touch_grid {
+    grid-area: touch_grid;
+    position: absolute;
+    z-index: 9;
+}
+
+.gyro_grid {
+    grid-area: gyro_grid;
+    position: absolute;
+    z-index: 9;
+}
+
+.vacant_1_grid {
+    grid-area: vacant_1_grid;
+}
+
+.vacant_2_grid {
+    grid-area: vacant_2_grid;
+}
+
+.text_info {
+    width: 90%;
+    margin-left: 5%;
+    height: 410px;
+    padding: 5px;
+    text-align: left;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+}
+
+.input_field {
+    width: 90%;
+    padding: 5px;
+    text-align: left;
+    border: 2px solid #fff;
+    border-radius: 8px;
+}
+
+.output_field {
+    width: 90%;
+    padding: 5px;
+    height: 80px;
+    text-align: left;
+    border: 2px solid #fff;
+    border-radius: 8px;
+}
+
+@media(max-width: 550px) {
+    .row {
+        margin-top: 30px;
+    }
+    .total_course_background {
+        height: 150px;
+    }
+    .completed_course_background {
+        height: 150px;
+    }
+    .rating_background {
+        height: 150px;
+    }
+    .favorite_course_background {
+        height: 150px;
+    }
+    .header_h5 {
+        color: #000000;
+        font-weight: 600;
+        font-size: 16px;
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+
+    .middle_h6 {
+        text-align: left;
+        color: #000000;
+        font-weight: 700;
+        font-size: 25px;
+        padding-left: 15px;
+    }
+
+    .bottom_p {
+        color: #000000;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: left;
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+}
